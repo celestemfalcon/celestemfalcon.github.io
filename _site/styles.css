@@ -1,0 +1,69 @@
+/* --- Global Styles --- */
+
+/* 1. Fixed Font Import - Use the full Google Fonts URL */
+@import url('https://googleapis.com');
+
+/* 2. Global Reset - Removes the default browser "white gap" */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 3. Combined Body Styles */
+body {
+  font-family: 'Lora', serif; /* Now correctly applied */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #fbe3d7; /* Champagne */
+  color: #402b4c;           /* Martinique */
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* --- Header & Navbar --- */
+.navbar {
+  background-color: #402b4c;
+  border-bottom: 2px solid #957d86;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fbe3d7;
+}
+
+.navbar-nav .nav-link.active, 
+.navbar-brand.active, 
+.navbar-brand:focus, 
+.navbar-nav .nav-link:hover, 
+.navbar-brand:hover {
+  color: #ff8a79 !important;
+  font-weight: bold !important;
+}
+
+/* --- Main Content Area --- */
+main a {
+  color: #aa76f5; /* Heliotrope */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+main a:hover {
+  color: #ff8a79; /* Tangerine */
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+.nav-footer {
+  background-color: #402b4c !important;
+  color: #fbe3d7; /* Explicitly set text color to white */
+}
+
+/* Optional: Ensure footer links are also readable */
+.nav-footer a {
+  color: #fbe3d7 !important;
+}
